@@ -1,11 +1,37 @@
 
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+
 body {
     background-color: beige;
     margin:0 auto;
+    
 }
+section {
+    scroll-snap-align: center;
+}
+header {
+    position: relative;
+    bottom: 30em;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Bebas Neue',
+    cursive;
+    transition: color 0.2s;
+}
+ header ul li a:hover {
+    color: white;
+ }
 
  /* MAIN////FIRST DIV WITH IMAGE AND UL CLASS */
-.bio {
+#bio {
 height: 100vh;
 width: 100%;
 background-image: url("/wireframes/backgrounddivmain.jpeg");
@@ -15,34 +41,32 @@ background-size: cover;
 -o-background-size: cover; */
 border: 3px solid grey;
 background-color: whitesmoke;
-overflow:hidden;
+overflow: hidden;
 }
 
 h2, h3 {
 position: relative;
-top: 34vh;
+top: 32vh;
 left: 30vh;
 
 }
-h2 {
+
+#bio h2 {
     color: white;
-    font-size: 30px;
-    text-shadow: 0.07em 0 black,
-    0 0.07em black,
-    -0.07em 0 black;
-    /* I got the font color,size, shadow from outside source */
+    font-size: 50px;
+    font-family: 'Oswald',
+        sans-serif;
+        padding: 30px;
 }
 
-h3 {
+#bio h3 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-family: 'Cormorant Garamond',
-    serif;
+        serif;
     width: 400px;
-    padding: 5px;
-    /* text-shadow: 0.02em 0 black,
-    0 0.04em black,
-    -0.04em 0 black; */
+    padding: 10px;
+
 
 }
 
@@ -50,9 +74,11 @@ h3 {
 .img-main1 img {
     max-width: 500px;
     position: relative;
-    left: 60em;
+    bottom: 4em;
+    left: 63em;
     border: 4px solid rgb(209, 216, 222);
 }
+
 
 ul {
     display: flex;
@@ -60,8 +86,9 @@ ul {
     justify-content: center;
     gap: 100px;
     position: relative;
-    top: 42rem;
+    top: 32em;
     list-style-type: none;
+    
 }
 
 .links li a {
@@ -70,4 +97,88 @@ ul {
     font-size: 50px;
     font-family: 'Bebas Neue',
     cursive;
+    transition: color 0.2s;
+}
+
+.links li a:hover {
+    color: white;
+}
+
+.media {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 10px;
+
+}
+
+.social {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    transition: color 0.2s;
+    position: relative;
+    bottom: 14em;
+    right: 20px;
+    
+}
+
+.social:hover {
+color: black;
+}
+
+
+
+/* ABOUT ME CSS PORTION SCREEN 2 */
+
+#about-me{
+    background-color: white;
+    height: 100vh;
+    width:100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECTS-ME CSS PORTION */
+#projects-me{
+background-color: blue;
+height: 100vh;
+width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT-ME CSS PORTION */
+#contact-me {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+
+}
+/* RESUME-ME CSS PORTION */
+#resume-me {
+    background-color: green;
+    height: 100vh;
+    width: 100%;
 }
