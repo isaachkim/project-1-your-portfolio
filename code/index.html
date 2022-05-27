@@ -18,6 +18,17 @@
 			rel="stylesheet"
 		/>
 
+		<!-- ABOUT ME P -->
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- LINK FOR CONTACT ME H1 -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,8 +43,6 @@
 	<body>
 		<div class="socials"></div>
 		<div class="everything">
-
-
 			<!-- NEW SECTION MAIN  -->
 			<section id="bio">
 				<h2>Isaac Kim</h2>
@@ -43,7 +52,7 @@
 				</h3>
 
 				<div class="links">
-					<ul>
+					<ul id="linkz">
 						<li><a href="#bio">Main Page</a></li>
 						<li><a href="#about-me">About Me</a></li>
 						<li><a href="#projects-me">Projects</a></li>
@@ -53,7 +62,7 @@
 				</div>
 
 				<div class="img-main1">
-					<img src="/wireframes/mainphoto1.JPG" alt="photo of Isaac Kim" />
+					<img src="/wireframes/IMG_1524 3.jpg" alt="photo of Isaac Kim" />
 				</div>
 
 				<div class="media">
@@ -70,10 +79,10 @@
 					></a>
 				</div>
 			</section>
-<!-- NEW SECTION ABOUTME -->
+			<!-- NEW SECTION ABOUTME -->
 			<section id="about-me">
 				<header>
-					<ul>
+					<ul id="linkz">
 						<li><a href="#bio">Main Page</a></li>
 						<li><a href="#about-me">About Me</a></li>
 						<li><a href="#projects-me">Projects</a></li>
@@ -82,29 +91,35 @@
 					</ul>
 				</header>
 
-<h1>About Me</h1>
-<h2>Isaac Kim</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa atque expedita sit, temporibus vero, asperiores numquam, qui laborum incidunt esse dolores officiis dolore aspernatur sint exercitationem eligendi? Quo non tempore voluptas pariatur, in quae natus id, quam eum eos fugit facilis ipsum eius est saepe perferendis eligendi voluptatem aperiam quibusdam!</p>
-
-
-<div class="img-aboutme">
-					<img src="/wireframes/aboutmephtoo.png" alt="photo of Isaac Kim"/>
+				<div class="aboutme">
+					<h1>About Me</h1>
+					<h2>Software Developer</h2>
+					<p>
+						I am a student at General Assembly learning to be a Full-Stack
+						Software Engineer. My background is in Sales, Data-entry, and
+						Management. Lorem ipsum, dolor sit amet consectetur adipisicing
+						elit. Minus eaque placeat in quos pariatur voluptates!
+					</p>
 				</div>
-
-
-
-
-
-
-
-
-
-
+				<div class="skills-tab">
+					<h2>Skills | Languages</h2>
+					<ul id="skillz">
+						<li>• skillsets</li>
+						<li>• skillsets</li>
+						<li>• skillsets</li>
+						<li>• skillsets</li>
+						<li>• skillsets</li>
+						<li>• skillsets</li>
+					</ul>
+				</div>
+				<div class="img-aboutme">
+					<img src="/wireframes/aboutmephtoo.png" alt="photo of Isaac Kim" />
+				</div>
 			</section>
-
+			<!-- PROJECTS SECTION -->
 			<section id="projects-me">
 				<header>
-					<ul>
+					<ul id="linkz">
 						<li><a href="#bio">Main Page</a></li>
 						<li><a href="#about-me">About Me</a></li>
 						<li><a href="#projects-me">Projects</a></li>
@@ -113,21 +128,87 @@
 					</ul>
 				</header>
 			</section>
-
+			<!-- CONTACT ME SECTION -->
 			<section id="contact-me">
-			<header>
-				<ul>
-					<li><a href="#bio">Main Page</a></li>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#projects-me">Projects</a></li>
-					<li><a href="#contact-me">Contact Me</a></li>
-					<li><a href="#resume-me">Resume</a></li>
-				</ul>
-			</header>
+				<header>
+					<ul id="linkz">
+						<li><a href="#bio">Main Page</a></li>
+						<li><a href="#about-me">About Me</a></li>
+						<li><a href="#projects-me">Projects</a></li>
+						<li><a href="#contact-me">Contact Me</a></li>
+						<li><a href="#resume-me">Resume</a></li>
+					</ul>
+				</header>
+				<h1>CONTACT ME</h1>
+				<h2>━━━━ xxx ━━━━</h2>
+				<h3>Lets Get in Touch!</h3>
+
+				<h4>SOCIALS</h4>
+				<div class="contact-social">
+					<a class="c-social" href="#" target="_blank"
+						><ion-icon name="logo-linkedin"></ion-icon
+					></a>
+
+					<a class="c-social" href="#" target="_blank"
+						><ion-icon name="logo-github"></ion-icon
+					></a>
+
+					<a class="c-social" href="#" target="_blank"
+						><ion-icon name="logo-instagram"></ion-icon
+					></a>
+				</div>
+				<div class="input-name">
+					<label for="name" class="input-c"></label>
+					<input
+						type="text"
+						class="input-cc"
+						name="name"
+						required
+						placeholder="Name"
+						value
+					/>
+				</div>
+				<div class="input-email">
+					<label for="email" class="input-c"></label>
+					<input
+						type="text"
+						class="input-cc"
+						name="email"
+						required
+						placeholder="Email address"
+						value
+					/>
+				</div>
+				<div class="input-subject">
+					<label for="message" class="input-c"></label>
+					<input
+						type="text"
+						class="input-cc"
+						name="subject"
+						required
+						placeholder="Subject"
+						value
+					/>
+				</div>
+				<div class="input-message">
+					<label for="message" class="input-c"></label>
+					<input
+						type="text"
+						class="input-cc"
+						name="message"
+						required
+						placeholder="Your Message"
+						value
+					/>
+				</div>
+				<div class="submit-contact">
+					<button type="submit" class="contactme-submit">Send Message</button>
+				</div>
 			</section>
+			<!-- RESUME SECTION -->
 			<section id="resume-me">
 				<header>
-					<ul>
+					<ul id="linkz">
 						<li><a href="#bio">Main Page</a></li>
 						<li><a href="#about-me">About Me</a></li>
 						<li><a href="#projects-me">Projects</a></li>
