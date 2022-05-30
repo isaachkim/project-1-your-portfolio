@@ -1,4 +1,8 @@
 
+
+
+
+
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -10,6 +14,10 @@ body {
     background-color: beige;
     margin:0 auto;
     
+}
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 section {
     scroll-snap-align: center;
@@ -30,6 +38,34 @@ header ul li a{
     color: white;
  }
 
+
+/* MODAL */
+.modal-container {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/wireframes/modalimg.jpeg");
+    background-size: cover;
+    border: 3px solid grey;
+    overflow: hidden;
+    
+}
+
+
+.modal-container h2{
+    font-size: 30px;
+}
+.modal-container #screen-btn{
+    font-size: 50px;
+}
+
+
+.hide {
+    display: none
+}
+
  /* MAIN////FIRST DIV WITH IMAGE AND UL CLASS */
 #bio {
 height: 100vh;
@@ -40,9 +76,12 @@ background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover; */
 border: 3px solid grey;
-background-color: whitesmoke;
+/* background-color: whitesmoke; */
 overflow: hidden;
 }
+
+
+
 
 h2, h3 {
 position: relative;
@@ -146,7 +185,7 @@ color: black;
     max-width: 350px;
     position: relative;
     left: 10em;
-    bottom: 28em;
+    bottom: 23em;
     border: 4px solid rgb(209, 216, 222);
 
 }
@@ -209,8 +248,6 @@ padding: 10px;
 position: relative;
 left: 30em;
 top: 4em;
-
-
 }
 
 
@@ -227,9 +264,14 @@ top: 4em;
 
 /* PROJECTS-ME CSS PORTION */
 #projects-me{
-background-color: blue;
+background-color: rgb(255, 255, 255);
 height: 100vh;
 width:100%;
+background-image: url("/wireframes/projectbackground.jpg");
+background-size: cover;
+border: 3px solid grey;
+background-color: whitesmoke;
+overflow: hidden;
 }
 
 
@@ -292,14 +334,16 @@ left: 15em;
     top: 0.5em;
 }
 
+
 .c-social {
     
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-size: 50px;
-        transition: color 0.2s;
-        position: relative;
-        
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    transition: color 0.2s;
+    position: relative;
+    top: 9em;
+    left: 17.5em;
     
     
     
@@ -308,18 +352,69 @@ left: 15em;
 color: white;
 }
 
-.input-name {
-    border-radius: 0;
+
+
+#contact-me h4{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: 'Montserrat Alternates',
+    sans-serif;
+    
+    position: relative;
+    top: 12em;
+    left: 25em;
+}
+
+/* .input-name {
+    border-radius: 1;
     border: 1px solid gray;
     width: 300px;
-    
+    height: 25px;
+    padding: 0.5em;
+      box-sizing: border-box;
+
+
+} */
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50em;
 }
 
 
+.input-cc {
+    width: 292px;
+    height: 15px;
+    padding: 0.5em;
+    margin: 5px;
+}
+
+.input-ccc {
+    width: 292px;
+    height: 60px;
+    padding: 0.5em;
+    margin: 5px;
+}
+
+.contactme-submit{
+    width: 150px;
+    height: 30px;
+    padding: 0.5em;
+    margin: 5px;od
+}
 
 /* RESUME-ME CSS PORTION */
 #resume-me {
     background-color: green;
     height: 100vh;
     width: 100%;
+}
+
+
+.scrollable {
+    height: 100px;
+    
+    overflow-y: auto;
 }

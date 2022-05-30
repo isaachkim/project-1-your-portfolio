@@ -36,11 +36,15 @@
 		<!-- LINK FOR CSS AND JS -->
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="reset.css" />
-		<script src="script.js"></script>
+		<script defer src="script.js"></script>
 
 		<title>Document</title>
 	</head>
 	<body>
+
+	
+
+
 		<div class="socials"></div>
 		<div class="everything">
 			<!-- NEW SECTION MAIN  -->
@@ -79,6 +83,7 @@
 					></a>
 				</div>
 			</section>
+			
 			<!-- NEW SECTION ABOUTME -->
 			<section id="about-me">
 				<header>
@@ -97,25 +102,26 @@
 					<p>
 						I am a student at General Assembly learning to be a Full-Stack
 						Software Engineer. My background is in Sales, Data-entry, and
-						Management. Lorem ipsum, dolor sit amet consectetur adipisicing
-						elit. Minus eaque placeat in quos pariatur voluptates!
+						Management. 
 					</p>
 				</div>
 				<div class="skills-tab">
 					<h2>Skills | Languages</h2>
 					<ul id="skillz">
-						<li>• skillsets</li>
-						<li>• skillsets</li>
-						<li>• skillsets</li>
-						<li>• skillsets</li>
-						<li>• skillsets</li>
-						<li>• skillsets</li>
+						<li>• HTML</li>
+						<li>• CSS</li>
+						<li>• JavaScript</li>
+						<li>• English</li>
+						<li>• Spanish</li>
+						<li>• Korean</li>
 					</ul>
 				</div>
 				<div class="img-aboutme">
 					<img src="/wireframes/aboutmephtoo.png" alt="photo of Isaac Kim" />
 				</div>
+
 			</section>
+			
 			<!-- PROJECTS SECTION -->
 			<section id="projects-me">
 				<header>
@@ -157,56 +163,65 @@
 						><ion-icon name="logo-instagram"></ion-icon
 					></a>
 				</div>
-				<div class="input-name">
-					<label for="name" class="input-c"></label>
-					<input
-						type="text"
-						class="input-cc"
-						name="name"
-						required
-						placeholder="Name"
-						value
-					/>
-				</div>
-				<div class="input-email">
-					<label for="email" class="input-c"></label>
-					<input
-						type="text"
-						class="input-cc"
-						name="email"
-						required
-						placeholder="Email address"
-						value
-					/>
-				</div>
-				<div class="input-subject">
-					<label for="message" class="input-c"></label>
-					<input
-						type="text"
-						class="input-cc"
-						name="subject"
-						required
-						placeholder="Subject"
-						value
-					/>
-				</div>
-				<div class="input-message">
-					<label for="message" class="input-c"></label>
-					<input
-						type="text"
-						class="input-cc"
-						name="message"
-						required
-						placeholder="Your Message"
-						value
-					/>
-				</div>
-				<div class="submit-contact">
-					<button type="submit" class="contactme-submit">Send Message</button>
+				<div class="input-form">
+					<div class="input-name">
+						<label for="name" class="input-c"></label>
+						<input id="Name"
+							type="text"
+							class="input-cc"
+							name="name"
+							required
+							placeholder="Name"
+							value
+						/>
+					</div>
+					<div class="input-email">
+						<label for="email" class="input-c"></label>
+						<input id ="Email"
+							type="text"
+							class="input-cc"
+							name="email"
+							required
+							placeholder="Email address"
+							value
+						/>
+					</div>
+					<div class="input-subject">
+						<label for="message" class="input-c"></label>
+						<input id="Subject"
+							type="text"
+							class="input-cc"
+							name="subject"
+							required
+							placeholder="Subject"
+							value
+						/>
+					</div>
+					<div class="input-message">
+						<label for="message" class="input-c"></label>
+						<input id="Message"
+							type="text"
+							class="input-ccc"
+							name="message"
+							required
+							placeholder="Your Message"
+							value
+						/>
+					</div>
+					<div class="submit-contact">
+						<input type="submit"
+						value="Send Message" 
+						class="contactme-submit"></input>
+					</div>
+				
 				</div>
 			</section>
 			<!-- RESUME SECTION -->
 			<section id="resume-me">
+				<div class="img-resume">
+
+					<!-- img goes here -->
+				</div>
 				<header>
 					<ul id="linkz">
 						<li><a href="#bio">Main Page</a></li>
@@ -230,5 +245,15 @@
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
+
+
+		<!-- MODAL -->
+			<section class="modal-container modal-welcome">
+			
+				<h2>Isaac Kim</h2>
+				<span id ="screen-btn">
+					Click anywhere to continue.
+				</span>
+			</section>
 	</body>
 </html>
