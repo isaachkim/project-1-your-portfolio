@@ -29,9 +29,36 @@ function formSubmits() {
 
 
 // modal
-const startBtnEl = document.querySelector('.modal-welcome');
-const welcomeModalEl = document.querySelector('.modal-welcome');
-startBtnEl.addEventListener('click', hide);
+const startBtn = document.querySelector('.modal-welcome');
+const welcomeModal = document.querySelector('.modal-welcome');
+startBtn.addEventListener('click', hide);
 function hide() {
-	welcomeModalEl.classList.add('hide');
+	welcomeModal.classList.add('hide');
 }
+
+// carousel
+
+let currentImgIndex = 0;
+let previousImgIndex = 0;
+const images = document.querySelectorAll('.images');
+const next = document.querySelector('.next');
+next.addEventListener('click', () => {
+	let previousImgIndex = currentImgIndex;
+	currentImgIndex = currentImgIndex + 1;
+	if (currentImgIndex >= images.length) {
+		currentImgIndex = 0;
+	}
+	images[previousImgIndex].style.display = 'none';
+	images[currentImgIndex].style.display = 'block';
+});
+const prev = document.querySelector('.prev');
+prev.addEventListener('click', () => {
+	let previousImgIndex = currentImgIndex;
+	currentImgIndex = currentImgIndex - 1;
+	if (currentImgIndex < 0) {
+		currentImgIndex = 3;
+	}
+
+	images[previousImgIndex].style.display = 'none';
+	images[currentImgIndex].style.display = 'block';
+});

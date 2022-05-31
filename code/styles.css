@@ -1,8 +1,5 @@
 
 
-
-
-
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -55,10 +52,21 @@ header ul li a{
 
 
 .modal-container h2{
-    font-size: 30px;
+    color: white;
+    font-size: 60px;
+    font-family: 'Oswald',
+    sans-serif;
+    position: relative;
+    top: 6.5em;
+    left: 14em;   
+    
 }
 .modal-container #screen-btn{
-    font-size: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald',
+    sans-serif;
+    padding: 30px;
 }
 
 
@@ -252,9 +260,52 @@ top: 4em;
 
 
 
+/* CAROUSEL CSS PORTION */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
 
 
 
+.carousel-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.imgz {
+    width: 110vh;
+    height: 85vh;
+}
+
+.images {
+    display: none;
+    border-radius: 10px;
+}
+
+.images:first-of-type {
+    display: block;
+}
+
+.carousel-button {
+    align-self: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    transition: color 0.2s;
+   
+}
+
+.carousel-button:hover {
+    color: rgb(0, 0, 0);
+}
 
 
 
@@ -292,7 +343,6 @@ overflow: hidden;
     background-image: url("/wireframes/contactmeimg1.jpg");
     background-size:cover;
     border: 3px solid grey;
-    background-color: whitesmoke;
     overflow: hidden;
     }
 
@@ -402,19 +452,257 @@ color: white;
     width: 150px;
     height: 30px;
     padding: 0.5em;
-    margin: 5px;od
+    margin: 5px;
 }
 
 /* RESUME-ME CSS PORTION */
 #resume-me {
-    background-color: green;
+    background-image: url("/wireframes/resumebackr1.jpg");
     height: 100vh;
     width: 100%;
+    background-size:cover;
+    border: 3px solid grey;
+    background-color: whitesmoke;
+    overflow: hidden;
 }
 
 
-.scrollable {
-    height: 100px;
+.img-resume {
+    height: 0;
+}
+
+#resmi {
+    height: 92vh;
+    width: 44%;
+    position: relative;
+    top: 4.3em;
+    left: 33em;
+}
+
+/* MEDIA */
+
+
+@media (max-width: 1300px) {
+.modal-container h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald',
+        sans-serif;
     
-    overflow-y: auto;
+
+}
+
+
+    .img-main1 {
+        display: flex;
+        position: relative;
+        left: -55em;
+    }
+   .img-main1 img{
+       width: 30%;
+      
+   }
+
+   
+   #bio h2{
+       font-size: 25px;
+       position:relative;
+       top: 17em;
+       left:1em;
+        
+   }
+   #bio h3{
+       font-size: 25px;
+    position:relative;
+    top: 17em;
+    left: 1em;
+   }
+
+#linkz {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 32em;
+    list-style-type: none;
+
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgb(116, 42, 42);
+    font-size: 20px;
+    font-family: 'Bebas Neue',
+        cursive;
+
+}
+
+.img-aboutme {
+    position: relative;
+    left:-7em;
+    top:-7em;
+}
+
+.aboutme2 {
+    width: 20%;
+}
+
+.aboutme h1{
+   position: relative;
+   font-size: 20px;
+   top: -2em
+}
+#about-me p {
+    font-size: 20px;
+    position: relative;
+    left: 3em;
+    top: 15em;
+    width: 300px;
+}
+
+.aboutme h2 {
+font-size: 20px;
+position: relative;
+left: 3em;
+top: 16em;
+width: 300px;
+}
+
+.skills-tab h2{
+    font-size: 20px;
+    position: relative;
+    left: 3em;
+    top: 15em;
+    width: 300px;
+}
+
+#skillz {
+    font-size: 20px;
+    position: relative;
+    left: 3em;
+    top: 15em;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+.carousel-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.imgz {
+    width: 40vh;
+    height: 35vh;
+}
+
+.carousel-button {
+    align-self: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: color 0.2s;
+
+}
+
+#contact-me h1{
+    
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    top: 2em;
+    left: 1em;
+
+}
+
+#contact-me h2 {
+
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    top: 2em;
+    left: 1em;
+
+}
+
+#contact-me h3 {
+
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    top: 2em;
+    left: 1em;
+
+}
+#contact-me h4 {
+
+    font-size: 30px;
+    padding: 10px;
+    position: relative;
+    top: 10em;
+    left: 1em;
+
+}
+
+
+.c-social {
+
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top: 15em;
+    left: 2.5em;
+
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1em;
+}
+
+
+.input-cc {
+    width: 280px;
+    height: 10px;
+    padding: 0.5em;
+    margin: 2px;
+}
+
+.input-ccc {
+    width: 280px;
+    height: 30px;
+    padding: 0.5em;
+    margin: 2px;
+}
+
+.contactme-submit {
+    width: 120px;
+    height: 30px;
+    padding: 0.5em;
+    margin: 2px;
+}
+
+
+#resmi {
+    width: 60%;
+    position: inherit;
+    padding: 30px;
+   
+}
+
 }
