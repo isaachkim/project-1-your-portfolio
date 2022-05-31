@@ -1,17 +1,16 @@
 // SUBMIT FORM
 
+const button = document.querySelector('.submit-contact');
 
-const button = document.querySelector('.submit-contact')
-
-function formSubmit() {
+/* function formSubmit() {
 	console.log (Array.from(document.querySelectorAll('.input-form input')).reduce(
 	(acc, input) => ({ ...acc, [input.id]: input.value }),
 	{}
 ))
-}
-button.addEventListener('click', formSubmits)
+} */
+// this ^ is a method learned from outside source..
 
-
+button.addEventListener('click', formSubmits);
 
 // another form submit
 
@@ -24,9 +23,10 @@ const subject = document.querySelector('.input-subject input');
 const message = document.querySelector('.input-message input');
 
 function formSubmits() {
-    console.log(`Name: ${name.value}, Email: ${email.value}, Subject: ${subject.value}, Message: ${message.value}`)
+	console.log(
+		`Name: ${name.value}, Email: ${email.value}, Subject: ${subject.value}, Message: ${message.value}`
+	);
 }
-
 
 // modal
 const startBtn = document.querySelector('.modal-welcome');
